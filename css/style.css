@@ -1,0 +1,94 @@
+/* Add styling for the layout panel */
+#layout-panel {
+  border: 2px dashed #333;
+  min-height: 815px;
+  padding: 20px;
+}
+
+/* Style the navigation buttons */
+.arrow-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #4a5568;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+}
+
+/* Style the buttons to look like arrows */
+#left-arrow-btn::before {
+  content: "\2039"; /* Unicode for left arrow symbol */
+}
+
+#right-arrow-btn::before {
+  content: "\203A"; /* Unicode for right arrow symbol */
+}
+/* Style the layout options */
+#layout-options {
+  display: flex;
+  gap: 10px;
+}
+
+/* Style the layout option buttons */
+.layout-option {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #4a5568;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Additional style for the selected layout option */
+.layout-option.selected {
+  background-color: #1a202c;
+}
+#sidebar img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Container for each image and number */
+.image-number-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  /* Add some margin between each image and number */
+}
+
+/* Scrollable sidebar */
+#sidebar {
+  height: 75vh; /* Set a fixed height for the sidebar */
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds the height */
+}
+
+.drag-helper img {
+  width: 80px; /* Set the desired width */
+  height: auto; /* Keep the aspect ratio */
+}
+/* Set a common width for the images */
+#sidebar img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Container for each image and number */
+.image-number-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  /* Add some margin between each image and number */
+}
+
+/* Scrollable sidebar */
+#sidebar {
+  height: 70vh; /* Set a fixed height for the sidebar */
+  overflow-y: auto; /* Add vertical scrollbar when content exceeds the height */
+}
